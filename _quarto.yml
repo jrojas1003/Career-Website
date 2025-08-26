@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs   
+
+website:
+  page-navigation: true
+  title: "Jose Alberto Rojas Fallas"
+  favicon: UO-icon.png
+
+  page-footer:
+    left: "&copy; Copyright 2025, Jose A. Rojas Fallas"
+    right: "2025 Job Market Candidate"
+
+  navbar:
+    left:      
+      - text: Research
+        menu:
+          - text: Job Market Paper
+            href: research-agenda.qmd
+
+          - text: Working Papers
+            href: research-agenda.qmd
+
+      - href: teaching-experience.qmd
+        text: Teaching
+
+      - href: bio.qmd
+        text: Bio
+
+      - href: files/documents/rojas-cv.pdf
+        text: CV
+        target: _blank
+
+format:
+  html:
+    theme:
+      - styles.scss 
+    mainfont: Tauri
+    toc: true
+    page-layout: full 
